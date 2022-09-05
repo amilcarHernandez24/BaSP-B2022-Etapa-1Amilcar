@@ -1,0 +1,136 @@
+header {
+    background-color: #373867;
+    color: #fff;
+    height: 276px;
+    width: 80%;
+    float: right;
+}
+
+main {
+    background-color: #fff;
+    height: 2000px;
+}
+
+aside {
+    background-color: #707070;
+    width: 20%;
+    height: 2000px;
+    float: left;
+}
+
+footer {
+    background-color: #373867;
+    color: #fff;
+    text-align: center;
+    height: 180px;
+    padding: 70px;
+    box-sizing: border-box;    
+}
+
+footer p {
+    padding: 25px;
+}
+
+.social-media-header {
+    position: absolute;
+    top: 37px;
+    right: 43px;
+}
+
+h1 {
+    position: absolute;
+    width: 655px;
+    height: 121px;
+    left: 399px;
+    top: 90px;
+    font-family: helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 150px;
+    color: #FFFFFF;
+}
+
+header p {
+    position: absolute;
+    width: 227px;
+    height: 19px;
+    left: 858px;
+    top: 222px;
+    font-family: helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.main-img img {
+    position: relative;
+    border-radius: 0px 77px 77px 0px;
+    margin-top: 80px;
+}
+
+.main-img h2 {
+    position: absolute;
+    width: 356px;
+    height: 148px;
+    left: 300px;
+    top: 375px;
+    font-family: helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #AACE9B;
+    z-index: 100;
+}
+
+.management-software {
+    box-sizing: border-box;
+    position: absolute;
+    width: 420px;
+    height: 315px;
+    left: 929px;
+    top: 650px;
+    background: rgba(170, 206, 155, 0.82);
+    border: 2px solid rgba(224, 224, 224, 0.27);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.management-software p {
+    position: absolute;
+    width: 373px;
+    height: 193px;
+    left: 25px;
+    top: 62px;
+    font-family: helvetica;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 166.19%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.125em;
+    color: #373867;
+}
+
+.side-circles .main-why {
+    display: inline-block;
+    width: 50%;
+}
+
+.main-part {
+    float: right;
+    width: 80%;
+}
+
+.main-first-part {
+    background-color: #d9d9d9;
+}
+
+.main-second-part {
+    background-color: #d9d9d930;
+}
+
