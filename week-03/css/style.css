@@ -12,7 +12,7 @@ header {
 
 main {
     background-color: #fff;
-    height: 4000px;
+    height: 4200px;
 }
 
 aside {
@@ -69,6 +69,12 @@ header p {
     color: #000000;
 }
 
+.main-first-part {
+    height: 2116px; 
+    background-color: #d9d9d9;
+}
+
+
 .main-img img {
     position: relative;
     border-radius: 0px 77px 77px 0px;
@@ -81,7 +87,6 @@ header p {
     height: 148px;
     left: 300px;
     top: 375px;
-    
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -108,7 +113,6 @@ header p {
     height: 193px;
     left: 25px;
     top: 62px;
-    
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -120,14 +124,12 @@ header p {
     color: #373867;
 }
 
-.main-first-part {
-    height: 2116px; 
-}
-
 .main-why {
     width: 65%;
     float: left;
     height: 1012px; 
+    padding: 50px;
+    box-sizing: border-box;
 }
 
 .main-why h2 {
@@ -140,12 +142,22 @@ header p {
     padding: 40px;
 }
 
-.parrafo-why {
+.main-why h3 {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 44px;
+    color: #373867;
+    text-align: center;
+}
+
+.paragraph-why {
     display: block;
     text-align: justify;
     line-height: 163.52%;
     color: #373867;
     padding: 30px;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .side-circles {
@@ -154,14 +166,32 @@ header p {
     height: 1012px;
 }
 
-.square-buttons {
+.square-container {
     position: absolute;
-    width: 950px;
+    width: 75%;
     height: 231px;
-    left: 373px;
+    left: 320px;
     top: 2083px;
 }
 
+.square-buttons {
+    background-color: #AACE9B;
+    width: 240px;
+    height: 231px;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.square-buttons a {
+    text-decoration: none;
+    color: #000000;
+}
 /*
 .side-circles .main-why {
     display: inline-block;
@@ -171,13 +201,53 @@ header p {
 .main-part {
     float: right;
     width: 80%;
-}
-
-.main-first-part {
-    background-color: #d9d9d9;
+    display: block;
 }
 
 .main-second-part {
     background-color: #d9d9d930;
+    margin: 50px 200px 80px 130px;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.main-second-part h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #373867;
+}
+
+.paragraph-born {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 207.19%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #000000;
+    margin: 20px;
+}
+
+.form {
+    background-color: #fcfcfc;
+    box-sizing: border-box;
+    margin: 0px 300px 70px 250px;
+    width: 535px;
+    height: 548px;
+}
+
+.form h3 {
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
 }
 
