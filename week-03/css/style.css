@@ -10,6 +10,19 @@ header {
     float: right;
 }
 
+header p {
+    position: absolute;
+    width: 227px;
+    height: 19px;
+    left: 858px;
+    top: 222px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+}
+
 main {
     background-color: #fff;
     height: 4200px;
@@ -20,6 +33,7 @@ aside {
     width: 20%;
     height: 100%;
     float: left;
+    position: relative;
 }
 
 footer {
@@ -41,7 +55,6 @@ h1 {
     height: 121px;
     left: 399px;
     top: 90px;
-    
     font-style: normal;
     font-weight: 700;
     font-size: 128px;
@@ -49,23 +62,79 @@ h1 {
     color: #FFFFFF;
 }
 
-header p {
-    position: absolute;
-    width: 227px;
-    height: 19px;
-    left: 858px;
-    top: 222px;
-    
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 19px;
-    color: #000000;
-}
-
 aside input {
     margin: 20px;
     border-radius: 4px;
+}
+
+.nav-menu {
+    margin: 20px 10px 30px 30px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.nav-menu img {
+    width: 27px;
+}
+
+.nav-menu li {
+    padding-top: 20px;
+}
+
+.nav-submenu {
+    margin: 70px 40px 0 60px;
+}
+
+.submenu-text a {
+    color: #AACE9B;
+}
+
+.nav-submenu a {
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.nav-submenu .submenu-options {
+    margin-left: 15px;
+    padding-top: 5px;
+}
+.submenu-options a {
+    color: #FFFFFF50;
+}
+
+.submenu-options li {
+    padding: 20px;
+}
+
+.aside-bottom {
+    position:absolute; 
+    bottom: 0;
+    margin-bottom: 30px;
+}
+
+.aside-bottom h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.aside-bottom img {
+    width: 30px;
+}
+
+.aside-bottom p {
+    display: inline-block;
+    width: 234px;
+    margin-bottom: 43px;
 }
 
 .social-media-header {
@@ -78,7 +147,6 @@ aside input {
     height: 2116px; 
     background-color: #d9d9d9;
 }
-
 
 .main-img img {
     position: relative;
@@ -143,7 +211,7 @@ aside input {
     font-size: 48px;
     line-height: 58px;
     text-align: center;
-    font-family: roboto;
+    font-family: 'Roboto';
     padding: 40px;
 }
 
@@ -174,26 +242,46 @@ aside input {
 .side-circles {
     width: 160px;
     height: 130px;
-    /*margin: 145px 65px 0px 65px;*/
     border-radius: 50%;
-    border: 5px solid #707070;
+    border: 8px solid #707070;
     background-color: #373867;
 }
 
 .circles-container section:first-child {
     margin: 145px 65px 0px -50px;
+    position: relative;
+    text-align: center;
 }
 
 .circles-container section:nth-child(2) {
     margin: 145px 65px 0px 140px;
+    position: relative;
+    text-align: center;
 }
 
 .circles-container section:nth-child(3) {
     margin: 145px 65px 0px -50px;
+    position: relative;
+    text-align: center;
 }
 
 .circles-container section:last-child {
     margin: 145px 65px 0px 140px;
+    position: relative;
+    text-align: center;
+}
+
+.circles-container p {
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circles-container span {
+    color: #AACE9B;
 }
 
 .square-container {
