@@ -35,12 +35,6 @@ footer p {
     padding: 25px;
 }
 
-.social-media-header {
-    position: absolute;
-    top: 37px;
-    right: 43px;
-}
-
 h1 {
     position: absolute;
     width: 655px;
@@ -67,6 +61,17 @@ header p {
     font-size: 15px;
     line-height: 19px;
     color: #000000;
+}
+
+aside input {
+    margin: 20px;
+    border-radius: 4px;
+}
+
+.social-media-header {
+    position: absolute;
+    top: 37px;
+    right: 43px;
 }
 
 .main-first-part {
@@ -160,10 +165,35 @@ header p {
     font-size: 30px;
 }
 
-.side-circles {
+.circles-container {
     float: right;
     width: 33%;
     height: 1012px;
+}
+
+.side-circles {
+    width: 160px;
+    height: 130px;
+    /*margin: 145px 65px 0px 65px;*/
+    border-radius: 50%;
+    border: 5px solid #707070;
+    background-color: #373867;
+}
+
+.circles-container section:first-child {
+    margin: 145px 65px 0px -50px;
+}
+
+.circles-container section:nth-child(2) {
+    margin: 145px 65px 0px 140px;
+}
+
+.circles-container section:nth-child(3) {
+    margin: 145px 65px 0px -50px;
+}
+
+.circles-container section:last-child {
+    margin: 145px 65px 0px 140px;
 }
 
 .square-container {
@@ -193,11 +223,15 @@ header p {
     text-decoration: none;
     color: #000000;
 }
-/*
-.side-circles .main-why {
-    display: inline-block;
-    width: 50%;
-}*/
+
+.square-buttons h3 {
+    padding-top: 10px;
+}
+
+.square-buttons img {
+    display: block;
+    margin: 55px 60px 30px 87px;
+}
 
 .main-part {
     float: right;
