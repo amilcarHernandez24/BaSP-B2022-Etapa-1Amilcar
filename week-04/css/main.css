@@ -131,6 +131,35 @@ main {
     margin-top: 20px;
 }
 
+.form-container h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 30px 25px;
+}
+
+.my-form {
+    width: 340px;
+    height: 475px;
+    margin: 30px 25px;
+}
+
+.my-form label {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.form-group input[type="text"], .form-group input[type="email"] {
+    padding: 6px;
+    width: 325px;
+    height: 37px;
+    border-radius: 8px;
+}
+
+
 /* 
 .main-first-part {
     height: 2116px; 
