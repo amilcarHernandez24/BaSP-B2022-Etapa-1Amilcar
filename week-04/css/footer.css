@@ -3,10 +3,19 @@ footer {
     color: #fff;
     text-align: center;
     height: 180px;
-    padding: 70px;
+    padding: 50px 20px;
     box-sizing: border-box;    
 }
 
 footer p {
-    padding: 25px;
+    padding: 25px 10px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 35px;
 }

@@ -2,7 +2,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    height: 4200px;
+    height: 2660px;
 }
 
 .main-part {
@@ -90,6 +90,13 @@ main {
     text-align: center;
 }
 
+.square-buttons h3 {
+    margin: 20px 20px 15px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+}
+
 .square-buttons a {
     text-decoration: none;
     color: #000;
@@ -154,11 +161,93 @@ main {
 
 .form-group input[type="text"], .form-group input[type="email"] {
     padding: 6px;
-    width: 325px;
+    width: 85%;
     height: 37px;
     border-radius: 8px;
 }
 
+.form-group input[type="radio"] {
+    display: inline-block;
+    width: 14%;
+}
+
+.form-group textarea {
+    width: 85%;
+    padding: 6px;
+    border-radius: 8px;
+}
+.my-form button {
+    width: 89%;
+    height: 37px;
+    border: none;
+    background: #AACE9B;
+    border-radius: 8px;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-bottom {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.main-bottom h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.main-bottom a {
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.main-bottom ul {
+    padding-top: 8px;
+    list-style: decimal;
+}
+
+.contact-us-container {
+    padding: 50px;
+    line-height: 20px;
+}
+
+.contact-us-container h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.contact-bottom {
+    display: block;
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-info img {
+    width: 35px;
+    height: 25px;
+    background: #373867;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    font-weight: 800;
+    font-size: 14px;
+}
 
 /* 
 .main-first-part {
