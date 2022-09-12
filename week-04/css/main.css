@@ -32,13 +32,13 @@ main {
 .management-software {
     background-color: #AACE9BD1;
     margin: 40px 20px;
-    width: 350px;
+    /* width: 350px; */
     height: 193px;
     border-radius: 55px;
 }
 
 .management-software p {
-    width: 306px;
+    /* width: 306px; */
     height: 129px;
     font-weight: 400;
     font-size: 25px;
@@ -74,7 +74,6 @@ main {
 
 .square-container {
     display: flex;
-    width: 284px;
     height: 245px;
     margin: 40px 50px;
     flex-wrap: wrap;
@@ -247,6 +246,117 @@ main {
 .contact-info p {
     font-weight: 800;
     font-size: 14px;
+}
+
+@media(min-width: 480px) {
+
+    .main-first-part {
+        background-color: #373867;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .main-img img {   
+        position: relative;
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 0;
+        width: 75%;
+        border-radius: 0 77px 77px 0;
+        height: 300px;        
+    }
+
+    .main-img h2 {
+        position: absolute;
+        margin: 65px 15px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #AACE9B;
+        width: 180px;
+        z-index: 100;
+        
+    }
+
+    .management-software {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        background-color: #AACE9BD1;
+        margin: 0px 20px;
+        width: 185px;
+        height: 220px;
+        border-radius: 55px;
+    }
+
+    .management-software p {
+        width: 90%;
+        height: 100%;
+        font-weight: 700;
+        font-size: 19px;
+        color: #000;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .square-container {
+        display: none;
+    }
+
+    .middle-container {
+        display: flex;
+        margin-top: 55px;
+    }
+
+    .main-why {
+        margin: 0px 30px 30px 30px;
+        color: #fff;
+        line-height: 25px;
+        width: 100%;
+    }
+
+    .main-why h2 {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: #AACE9B;
+    } 
+
+    .main-why h3 {
+        margin: 20px 0;
+        text-align: end;
+    }
+
+    .circles-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 30px 0;
+        width: 60%;
+        align-items: center;
+    }
+
+    .circles-container .side-circles {
+        width: 95px;
+        height: 95px;
+        border: 8px solid #707070;
+        border-radius: 100px;
+        margin-bottom: 10px;
+    }
+
+    .side-circles p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        margin: 23px 10px;
+        text-align: center;
+        width: 80px;
+    }
+
+    .side-circles span {
+        color: #AACE9B;
+    }
+
 }
 
 /* 
