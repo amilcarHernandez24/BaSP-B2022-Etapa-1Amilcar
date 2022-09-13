@@ -9,5 +9,15 @@ body {
     flex-direction: column;
 }
 
-
+@media(min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+}
 
