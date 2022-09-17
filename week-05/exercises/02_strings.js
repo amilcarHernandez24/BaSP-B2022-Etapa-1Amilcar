@@ -36,7 +36,10 @@ toLowerCase y el operador +).*/
 console.log('--EXERCISE 2.d:');
 
 var firstInUpper = 'se esta complicando';
+var stringOne = firstInUpper.substring(0,1).toUpperCase();
+var stringTwo = firstInUpper.substring(1,19).toLowerCase();
 
+console.log('Result: ' + stringOne + stringTwo);
 
 /* e. Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. Encontrar la posición 
 del primer espacio en blanco y guardarla en una variable (utilizar indexOf). */
@@ -55,4 +58,14 @@ operador +). */
 
 console.log('--EXERCISE 2.f:');
 
-var twoLongWords = 'Palabrotas Largotototas';
+var twoLongWords = 'palabrotas largotototas';
+var whereIsSpace = twoLongWords.indexOf(' ');
+
+var firstWordA = twoLongWords.substring(0,1).toUpperCase();
+var firstWordB = twoLongWords.substring(1,10).toLowerCase();
+
+var secWordA = twoLongWords.substring(11,12).toUpperCase(); 
+var secWordB = twoLongWords.substring(12,23);
+
+console.log('Result: space position ' + whereIsSpace);
+console.log('Result: ' + firstWordA + firstWordB + " " + secWordA + secWordB);
