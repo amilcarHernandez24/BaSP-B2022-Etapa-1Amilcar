@@ -11,6 +11,7 @@
 
 * HTML
 * CSS
+* JavaScript
 
 ```
 
@@ -39,5 +40,9 @@ It can be seen that the semantics of HTML are now taking shape, this allows us t
 This week the challenge was to be able to make the landing page responsive and to be able to see the content in both the mobile and tablet versions based on the designs made in week 1.
 
 CSS was mainly used, but structural changes were made to the HTML because flexbox had to be used to design the page.
+
+** Week 5 **
+
+For week 5 we worked with JavaScript, learning the basic concepts and doing some exercises to consolidate what we learned. It was a challenging week because we started to see what real programming would be like.
 
 _By Amilcar Hernandez_
