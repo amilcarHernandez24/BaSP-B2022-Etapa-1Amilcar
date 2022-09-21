@@ -1,12 +1,12 @@
 footer {
-    background-color: #373867;
-    color: #fff;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     height: 180px;
     padding: 50px 20px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    background-color: #373867;
+    color: #fff;
 }
 
 footer p {
@@ -19,6 +19,6 @@ footer p {
 footer .footer {
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
     align-self: center;
+    width: 50%;
 }

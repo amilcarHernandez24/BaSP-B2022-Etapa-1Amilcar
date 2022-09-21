@@ -1,6 +1,6 @@
 body {
+    display: inline-block;
     font-family:'Roboto', sans-serif;
-    display: inline-block; 
 }
 
 .container {

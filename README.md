@@ -41,8 +41,20 @@ This week the challenge was to be able to make the landing page responsive and t
 
 CSS was mainly used, but structural changes were made to the HTML because flexbox had to be used to design the page.
 
+```
+Corrections - CSS
+
+https://amilcarhernandez24.github.io/BaSP-B2022-Etapa-1Amilcar/week-04/
+```
+
 ** Week 5 **
 
 For week 5 we worked with JavaScript, learning the basic concepts and doing some exercises to consolidate what we learned. It was a challenging week because we started to see what real programming would be like.
+
+```
+Weekly problem - JavaScript
+
+https://amilcarhernandez24.github.io/BaSP-B2022-Etapa-1Amilcar/week-05/
+```
 
 _By Amilcar Hernandez_

@@ -65,10 +65,33 @@ function sumaTres(numOne, numTwo) {
     }
 }
 
-console.log('Result: ' + sumaTres(3, 'hola'));
+console.log('Result: ' + sumaTres(3, 4));
 
 /*e. Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma probando
 que todo siga funcionando igual.*/
 
 console.log('--EXERCISE 6.e:');
 
+function validacionSeparada(numOne, numTwo) {
+    if (typeof(numOne) == 'number' && typeof(numTwo) == 'number') {
+        if (validate(numOne) == true && validate(numTwo) == true) {
+            return numOne + numTwo;
+        } else {
+            alert('Uno o ambos numeros contienen decimales');
+            return Math.round(numOne + numTwo);
+        }
+    } else {
+        alert('Uno o ambos parametros no es un numero');
+        return 'NaN';
+    }
+}
+
+function sumaFinal(numOne, numTwo) {
+    if (validacionSeparada(numOne, numTwo)) {
+        return numOne + numTwo;
+    } else {
+        console.log('Error');
+    }
+}
+
+console.log('Result: ' + sumaFinal(4, 4));

@@ -1,8 +1,8 @@
 aside {
     display: none;
-    background-color: #707070;
     width: 20%;
     height: 100%;
+    background-color: #707070;
 }
 
 aside input {
@@ -31,9 +31,9 @@ aside input {
     }
 
     .nav-menu a {
-        text-decoration: none;
         margin-bottom: 10px;
         color: #fff;
+        text-decoration: none;
     }
 
     .nav-submenu {
@@ -45,8 +45,8 @@ aside input {
     }
 
     .nav-submenu a {
-        text-decoration: none;
         margin-bottom: 10px;
+        text-decoration: none;
     }
 
     .nav-submenu .submenu-options {
@@ -67,13 +67,13 @@ aside input {
     }
 
     .aside-bottom h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #000000;
         font-family: 'Roboto';
         font-weight: 700;
         font-size: 30px;
         line-height: 35px;
-        text-align: center;
-        color: #000000;
-        margin-bottom: 30px;
     }
 
     .aside-bottom img {
@@ -84,8 +84,8 @@ aside input {
         display: inline-block;
         width: auto;
         margin-bottom: 43px;
-        font-size: 14px;
         padding-left: 5px;
+        font-size: 14px;
         font-weight: 600;
     }
 
