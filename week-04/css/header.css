@@ -22,7 +22,6 @@ header p {
     margin-bottom: 5px;
 }
 
-
 .social-media-header {
     display: none;
 } 
@@ -114,7 +113,7 @@ header p {
         display: flex;
         justify-content: flex-end;
         width: 100%;
-    }   
+    }
 }
 
 @media(min-width: 1024px) {
@@ -141,4 +140,3 @@ header p {
         display: none;
     }
 }
-

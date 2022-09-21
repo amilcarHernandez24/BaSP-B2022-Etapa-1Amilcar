@@ -4,7 +4,9 @@ footer {
     text-align: center;
     height: 180px;
     padding: 50px 20px;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 footer p {
@@ -17,5 +19,6 @@ footer p {
 footer .footer {
     display: flex;
     justify-content: space-evenly;
-    margin: 0 35px;
+    width: 50%;
+    align-self: center;
 }

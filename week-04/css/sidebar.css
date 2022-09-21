@@ -35,28 +35,29 @@ aside input {
         margin-bottom: 10px;
         color: #fff;
     }
-    
+
     .nav-submenu {
         margin: 40px 40px 0 60px;
     }
-    
+
     .submenu-text a {
         color: #AACE9B;
     }
-    
+
     .nav-submenu a {
         text-decoration: none;
         margin-bottom: 10px;
     }
-    
+
     .nav-submenu .submenu-options {
         margin-left: 15px;
         padding-top: 5px;
     }
+
     .submenu-options a {
         color: #FFFFFF50;
     }
-    
+
     .submenu-options li {
         padding: 20px 0;
     }
@@ -74,11 +75,11 @@ aside input {
         color: #000000;
         margin-bottom: 30px;
     }
-    
+
     .aside-bottom img {
         width: 30px;
     }
-    
+
     .aside-bottom p {
         display: inline-block;
         width: auto;
@@ -94,5 +95,4 @@ aside input {
         align-items: center;
         padding-left: 10px;
     }
-
 }
