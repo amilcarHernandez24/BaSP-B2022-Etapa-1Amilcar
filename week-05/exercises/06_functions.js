@@ -73,7 +73,7 @@ que todo siga funcionando igual.*/
 console.log('--EXERCISE 6.e:');
 
 function validacionSeparada(numOne, numTwo) {
-    if (typeof(numOne) == 'number' && typeof(numTwo) == 'number') {
+    if (typeof(numOne) === 'number' && typeof(numTwo) === 'number') {
         if (validate(numOne) == true && validate(numTwo) == true) {
             return numOne + numTwo;
         } else {
@@ -90,8 +90,8 @@ function sumaFinal(numOne, numTwo) {
     if (validacionSeparada(numOne, numTwo)) {
         return numOne + numTwo;
     } else {
-        console.log('Error');
+       return console.log('Error');
     }
 }
 
-console.log('Result: ' + sumaFinal(4, 4));
+console.log('Result: ' + sumaFinal(4, 5));
