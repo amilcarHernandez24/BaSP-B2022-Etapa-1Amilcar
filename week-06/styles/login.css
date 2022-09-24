@@ -18,32 +18,32 @@ h1 {
     display: none;
 }
 
-.form {
+form {
     display: flex;
     flex-direction: column;
     margin: 10% 15%;
 }
 
-.form h2 {
+form h2 {
     font-weight: 400;
     font-size: 30px;
 }
 
-.form h2, .form input[type="email"], .form input[type="password"], .form button[type="submit"], .form div, .form a {
+form h2, form input[type="email"], form input[type="password"], form button[type="submit"], form div, form a {
     margin-bottom: 10%;
 }
 
-.form input[type="email"], .form input[type="password"], .form button[type="submit"] {
+form input[type="email"], form input[type="password"], form button[type="submit"] {
     padding: 12px;
     border-radius: 15px;
     border: none;
 }
 
-.form input[type="email"], .form input[type="password"] {
+form input[type="email"], form input[type="password"] {
     background-color: #f6f6f6;
 }
 
-.form button {
+form button {
     border: none;
     background: #373867;
     color: #fff;
@@ -54,11 +54,11 @@ h1 {
     justify-content: space-between;
 }
 
-.form .social-buttons {
+form .social-buttons {
     display: none;
 }
 
-.form .sign-up {
+form .sign-up {
     font-weight: 600;
     font-size: 16px;
     text-decoration: none;
@@ -89,7 +89,7 @@ h1 {
     .img-container {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
         width: 50%;
         box-sizing: border-box;
     }
@@ -97,6 +97,7 @@ h1 {
     .img-container img {
         height: 70%;
         width: 75%;
+        margin-top: 10%;
     }
 
     .form-container {
@@ -104,27 +105,35 @@ h1 {
         box-sizing: border-box;
     }
 
-    .form {
+    form {
         display: flex;
         flex-direction: column;
         margin: 10% 15%;
+        border-radius: 15px;
+        margin: 7% 10%;
+        padding: 3%;
+        background: #f6f6f6;
     }
 
-    .form h2 {
+    form h2 {
         font-weight: 400;
         font-size: 24px;
     }
 
-    .form h2, .form input[type="email"], .form input[type="password"], .form button[type="submit"], .form div, .form a {
+    form h2, form input[type="email"], form input[type="password"], form button[type="submit"], form div, form a {
             margin-bottom: 5%;
     }
 
-    .form input[type="email"], .form input[type="password"], .form button[type="submit"] {
+    form input[type="email"], form input[type="password"], form button[type="submit"] {
         padding: 12px;
         border-radius: 15px;
     }
 
-    .form button {
+    form input[type="email"], form input[type="password"] {
+        background: #fff;
+    }
+
+    form button {
         border: none;
         background: #373867;
         color: #fff;
@@ -136,11 +145,11 @@ h1 {
         font-size: 11px;
     }
 
-    .form p {
+    form p {
         font-size: 15px;
     }
 
-    .form .social-buttons {
+    form .social-buttons {
         display: none;
     }
 }
@@ -184,27 +193,32 @@ h1 {
         box-sizing: border-box;
     }
 
-    .form {
+    form {
         display: flex;
         flex-direction: column;
         margin: 10% 15%;
+        background: #fff;
     }
 
-    .form h2 {
+    form h2 {
         font-weight: 400;
         font-size: 24px;
     }
 
-    .form h2, .form input[type="email"], .form input[type="password"], .form button[type="submit"], .form div, .form a {
+    form h2, form input[type="email"], form input[type="password"], form button[type="submit"], form div, form a {
             margin-bottom: 5%;
     }
 
-    .form input[type="email"], .form input[type="password"], .form button[type="submit"] {
+    form input[type="email"], form input[type="password"], form button[type="submit"] {
         padding: 12px;
         border-radius: 15px;
     }
 
-    .form button {
+    form input[type="email"], form input[type="password"] {
+       border: 0.5px solid #000;
+    }
+
+    form button {
         border: none;
         background: #373867;
         color: #fff;
@@ -215,11 +229,11 @@ h1 {
         justify-content: space-between;
     }
 
-    .form p {
+    form p {
         font-size: 20px;
     }
 
-    .form .social-buttons {
+    form .social-buttons {
         display: flex;
         padding: 12px;
         border-radius: 15px;
