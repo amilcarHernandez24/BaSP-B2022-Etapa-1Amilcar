@@ -1,0 +1,230 @@
+header {
+    height: 73px;
+    color: #fff;
+    background: #373867;
+}
+
+h1 {
+    width: 170px;
+    height: 45px;
+    padding-top: 15px;
+    padding-left: 35px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.img-container {
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 15%;
+}
+
+.form h2 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.form h2, .form input[type="email"], .form input[type="password"], .form button[type="submit"], .form div, .form a {
+    margin-bottom: 10%;
+}
+
+.form input[type="email"], .form input[type="password"], .form button[type="submit"] {
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+}
+
+.form input[type="email"], .form input[type="password"] {
+    background-color: #f6f6f6;
+}
+
+.form button {
+    border: none;
+    background: #373867;
+    color: #fff;
+}
+
+.mdl-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .social-buttons {
+    display: none;
+}
+
+.form .sign-up {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+@media(min-width: 480px) {
+    header {
+        height: 115px;
+        color: #fff;
+        background: #373867;
+    }
+
+    main {
+        display: flex;
+    }
+
+    h1 {
+        width: 270px;
+        height: 72px;
+        padding-top: 20px;
+        padding-left: 60px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .img-container img {
+        height: 70%;
+        width: 75%;
+    }
+
+    .form-container {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 15%;
+    }
+
+    .form h2 {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .form h2, .form input[type="email"], .form input[type="password"], .form button[type="submit"], .form div, .form a {
+            margin-bottom: 5%;
+    }
+
+    .form input[type="email"], .form input[type="password"], .form button[type="submit"] {
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    .form button {
+        border: none;
+        background: #373867;
+        color: #fff;
+    }
+
+    .mdl-form {
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+    }
+
+    .form p {
+        font-size: 15px;
+    }
+
+    .form .social-buttons {
+        display: none;
+    }
+}
+
+@media(min-width: 1024px) {
+    header {
+        height: 115px;
+        color: #fff;
+        background: #373867;
+    }
+
+    main {
+        display: flex;
+    }
+
+    h1 {
+        width: 270px;
+        height: 72px;
+        padding-top: 20px;
+        padding-left: 60px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .img-container img {
+        height: 70%;
+        width: 75%;
+    }
+
+    .form-container {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 15%;
+    }
+
+    .form h2 {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .form h2, .form input[type="email"], .form input[type="password"], .form button[type="submit"], .form div, .form a {
+            margin-bottom: 5%;
+    }
+
+    .form input[type="email"], .form input[type="password"], .form button[type="submit"] {
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    .form button {
+        border: none;
+        background: #373867;
+        color: #fff;
+    }
+
+    .mdl-form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form p {
+        font-size: 20px;
+    }
+
+    .form .social-buttons {
+        display: flex;
+        padding: 12px;
+        border-radius: 15px;
+        border: 1px solid #000;
+        color: #000;
+        text-decoration: none;
+    }
+}

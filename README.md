@@ -56,5 +56,8 @@ Weekly problem - JavaScript
 
 https://amilcarhernandez24.github.io/BaSP-B2022-Etapa-1Amilcar/week-05/
 ```
+** week-06 **
+
+In week-06 we are going to work giving interaction to the page using JavaScript, we will start with the login section and then the sign-up section where we will create the corresponding .html, .css and .js files where we will create the views according to the screenflow of the week-01. Once the login and sign-up forms have been created, the data must be validated only with js code.
 
 _By Amilcar Hernandez_
