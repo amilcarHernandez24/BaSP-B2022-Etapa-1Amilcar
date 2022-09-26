@@ -142,5 +142,21 @@ window.onload = function() {
 
     // Email validation
 
+    var emailSignUp = document.getElementById('email');
     
+    emailSignUp.onblur = function() { 
+        var emailExp = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;        ;
+        var emailCharValid = emailExp.test(emailSignUp.value);
+        if (emailCharValid == true) {
+            emailSignUp.classList.add('green-border');
+            console.log(emailSignUp.value + ' Funciona');
+        } else {
+            emailSignUp.classList.add('red-border');
+            console.log(emailSignUp.value + ' No funciona');
+        }
+    }
+
+    emailSignUp.onfocus = function() {
+        emailSignUp.classList.remove('red-border', 'green-border');
+    }  
 }
