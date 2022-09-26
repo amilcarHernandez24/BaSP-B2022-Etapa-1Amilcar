@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     height: 73px;
     color: #fff;
@@ -29,17 +33,17 @@ form h2 {
     font-size: 30px;
 }
 
-form h2, form input[type="email"], form input[type="password"], form button[type="submit"], form div, form a {
+form h2, form input[type="text"], form input[type="password"], form button[type="submit"], form div, form a {
     margin-bottom: 10%;
 }
 
-form input[type="email"], form input[type="password"], form button[type="submit"] {
+form input[type="text"], form input[type="password"], form button[type="submit"] {
     padding: 12px;
     border-radius: 15px;
     border: none;
 }
 
-form input[type="email"], form input[type="password"] {
+form input[type="text"], form input[type="password"] {
     background-color: #f6f6f6;
 }
 
@@ -120,16 +124,16 @@ form .sign-up {
         font-size: 24px;
     }
 
-    form h2, form input[type="email"], form input[type="password"], form button[type="submit"], form div, form a {
+    form h2, form input[type="text"], form input[type="password"], form button[type="submit"], form div, form a {
             margin-bottom: 5%;
     }
 
-    form input[type="email"], form input[type="password"], form button[type="submit"] {
+    form input[type="text"], form input[type="password"], form button[type="submit"] {
         padding: 12px;
         border-radius: 15px;
     }
 
-    form input[type="email"], form input[type="password"] {
+    form input[type="text"], form input[type="password"] {
         background: #fff;
     }
 
@@ -205,18 +209,18 @@ form .sign-up {
         font-size: 24px;
     }
 
-    form h2, form input[type="email"], form input[type="password"], form button[type="submit"], form div, form a {
-            margin-bottom: 5%;
+    form h2, form input[type="text"], form input[type="password"], form button[type="submit"], form div, form a {
+        margin-bottom: 5%;
     }
 
-    form input[type="email"], form input[type="password"], form button[type="submit"] {
+    form input[type="text"], form input[type="password"], form button[type="submit"] {
         padding: 12px;
         border-radius: 15px;
     }
 
-    form input[type="email"], form input[type="password"] {
+    form input[type="text"], form input[type="password"] {
        border: 0.5px solid #000;
-    }
+    } 
 
     form button {
         border: none;
@@ -241,4 +245,18 @@ form .sign-up {
         color: #000;
         text-decoration: none;
     }
+}
+
+  /* JS Classes */
+
+  .red-border {
+    border: 10px; 
+    border-style: solid; 
+    border-color: red;
+}
+
+.green-border {
+    border: 5px; 
+    border-style: solid; 
+    border-color: green;
 }
