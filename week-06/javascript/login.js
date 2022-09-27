@@ -39,4 +39,14 @@ window.onload = function() {
     passwordValid.onfocus = function() {
         passwordValid.classList.remove('red-border', 'green-border');
     }
+
+    var buttonLogin = document.getElementById('button');
+
+    buttonLogin.addEventListener('click', loginBtn);
+
+    function loginBtn() {
+        if (emailValid.value == false) {
+            
+        } 
+    }
 }
