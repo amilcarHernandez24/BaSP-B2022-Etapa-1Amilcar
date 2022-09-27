@@ -31,23 +31,21 @@ form {
 form h2 {
     font-weight: 400;
     font-size: 30px;
-}
-
-form h2, form input[type="text"], form input[type="password"], form button[type="submit"], form div, form a {
     margin-bottom: 10%;
 }
 
-form input[type="text"], form input[type="password"], form button[type="submit"] {
+form input {
+    margin-bottom: 10%;
     padding: 12px;
     border-radius: 15px;
     border: none;
-}
-
-form input[type="text"], form input[type="password"] {
     background-color: #f6f6f6;
 }
 
 form button {
+    margin-bottom: 10%;
+    padding: 12px;
+    border-radius: 15px;
     border: none;
     background: #373867;
     color: #fff;
@@ -56,6 +54,7 @@ form button {
 .mdl-form {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10%;
 }
 
 form .social-buttons {
@@ -122,18 +121,10 @@ form .sign-up {
     form h2 {
         font-weight: 400;
         font-size: 24px;
+        margin-bottom: 5%;
     }
 
-    form h2, form input[type="text"], form input[type="password"], form button[type="submit"], form div, form a {
-            margin-bottom: 5%;
-    }
-
-    form input[type="text"], form input[type="password"], form button[type="submit"] {
-        padding: 12px;
-        border-radius: 15px;
-    }
-
-    form input[type="text"], form input[type="password"] {
+    form input {
         background: #fff;
     }
 
@@ -146,7 +137,7 @@ form .sign-up {
     .mdl-form {
         display: flex;
         justify-content: space-between;
-        font-size: 11px;
+        font-size: 12px;
     }
 
     form p {
@@ -209,18 +200,9 @@ form .sign-up {
         font-size: 24px;
     }
 
-    form h2, form input[type="text"], form input[type="password"], form button[type="submit"], form div, form a {
-        margin-bottom: 5%;
+    form input {
+        border: 0.5px solid #000;
     }
-
-    form input[type="text"], form input[type="password"], form button[type="submit"] {
-        padding: 12px;
-        border-radius: 15px;
-    }
-
-    form input[type="text"], form input[type="password"] {
-       border: 0.5px solid #000;
-    } 
 
     form button {
         border: none;
@@ -239,6 +221,7 @@ form .sign-up {
 
     form .social-buttons {
         display: flex;
+        margin-bottom: 5%;
         padding: 12px;
         border-radius: 15px;
         border: 1px solid #000;
@@ -247,16 +230,12 @@ form .sign-up {
     }
 }
 
-  /* JS Classes */
+/* JS Classes */
 
-  .red-border {
-    border: 10px; 
-    border-style: solid; 
-    border-color: red;
+.red-border {
+    border: 2px solid red;
 }
 
 .green-border {
-    border: 5px; 
-    border-style: solid; 
-    border-color: green;
+    border: 2px solid green;
 }

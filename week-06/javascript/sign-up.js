@@ -65,7 +65,7 @@ window.onload = function() {
     var phoneSignUp = document.getElementById('phone');
 
     phoneSignUp.onblur = function() {
-        var phoneExp = /^[0-9]{10,20}$/;
+        var phoneExp = /^[0-9]{9,20}$/;
         var phoneCharValid = phoneExp.test(phoneSignUp.value);
         if (phoneCharValid == true) {
             phoneSignUp.classList.add('green-border');
@@ -158,5 +158,43 @@ window.onload = function() {
 
     emailSignUp.onfocus = function() {
         emailSignUp.classList.remove('red-border', 'green-border');
-    }  
+    } 
+    
+    // Password validation
+
+    var passwordSignUp = document.getElementById('password');
+    
+    passwordSignUp.onblur = function() { 
+        var emailExp = /^["a-zA-Z"0-9]{8,20}$/;       ;
+        var emailCharValid = emailExp.test(passwordSignUp.value);
+        if (emailCharValid == true) {
+            passwordSignUp.classList.add('green-border');
+            console.log(passwordSignUp.value + ' Funciona');
+        } else {
+            passwordSignUp.classList.add('red-border');
+            console.log(passwordSignUp.value + ' No funciona');
+        }
+    }
+
+    passwordSignUp.onfocus = function() {
+        passwordSignUp.classList.remove('red-border', 'green-border');
+    } 
+    
+    // Password validation 2
+
+    var confPasswordSignUp = document.getElementById('confirm-password');
+
+    confPasswordSignUp.onblur = function() {
+        if (confPasswordSignUp.value === passwordSignUp.value) {
+            confPasswordSignUp.classList.add('green-border');
+            console.log(confPasswordSignUp.value + ' paso');
+            } else {
+            confPasswordSignUp.classList.add('red-border');
+            console.log(confPasswordSignUp.value + ' No paso');
+        }
+    }
+
+    confPasswordSignUp.onfocus = function() {
+        confPasswordSignUp.classList.remove('red-border', 'green-border');
+    }   
 }
