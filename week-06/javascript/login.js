@@ -21,7 +21,7 @@ window.onload = function() {
     // Password validation
 
     var passwordValid = document.getElementById('password');
-    var passwordExpression = /^["a-zA-Z"0-9]{8,20}$/; 
+    var passwordExpression = /^["a-zA-Z"0-9]{8,20}$/;
 
     passwordValid.onblur = function() {
         var passwordCharValid = passwordExpression.test(passwordValid.value);
