@@ -3,16 +3,19 @@ window.onload = function() {
     // Name validation
 
     var nameSignUp = document.getElementById('name');
+    var nameExp = /^[a-zA-Z]{3,30}$/;
 
-    nameSignUp.onblur = function() {
-        var nameExp = /^[a-zA-Z]{3,30}$/;
-        var nameCharValid = nameExp.test(nameSignUp.value);
-        if (nameCharValid == true) {
+    function nameValidated() {
+        if (nameExp.test(nameSignUp.value) == true) {
+            return true;
+        }
+    }
+
+    nameSignUp.onblur = function () {
+        if (nameValidated() == true) {
             nameSignUp.classList.add('green-border');
-            console.log(nameSignUp.value + ' Funciona');
         } else {
             nameSignUp.classList.add('red-border');
-            console.log(nameSignUp.value + ' No funciona');
         }
     }
 
@@ -23,18 +26,22 @@ window.onload = function() {
     // Last name validation
     
     var lastNameSignUp = document.getElementById('lastName');
+    var lastNameExp = /^[a-zA-Z]{3,30}$/;
 
-    lastNameSignUp.onblur = function() {
-        var lastNameExp = /^[a-zA-Z]{3,30}$/;
-        var lastNameCharValid = lastNameExp.test(lastNameSignUp.value);
-        if (lastNameCharValid == true) {
-            lastNameSignUp.classList.add('green-border');
-            console.log(lastNameSignUp.value + ' Funciona');
-        } else {
-            lastNameSignUp.classList.add('red-border');
-            console.log(lastNameSignUp.value + ' No funciona');
+    function lastNameValidated() {
+        if (lastNameExp.test(lastNameSignUp.value) == true) {
+            return true;
         }
     }
+
+    lastNameSignUp.onblur = function () {
+        if (lastNameValidated() == true) {
+            lastNameSignUp.classList.add('green-border');
+        } else {
+            lastNameSignUp.classList.add('red-border');
+        }
+    }
+    
 
     lastNameSignUp.onfocus = function() {
         lastNameSignUp.classList.remove('red-border', 'green-border');
@@ -43,16 +50,19 @@ window.onload = function() {
     // DNI validation
 
     var idSignUp = document.getElementById('dni');
+    var idExp = /^[0-9]{7,15}$/;
 
-    idSignUp.onblur = function() { 
-        var idExp = /^[0-9]{7,15}$/;
-        var idCharValid = idExp.test(idSignUp.value);
-        if (idCharValid == true) {
+    function idValidated () {
+        if (idExp.test(idSignUp.value) == true) {
+            return true;
+        }
+    }
+
+    idSignUp.onblur = function() {
+        if (idValidated() == true) {
             idSignUp.classList.add('green-border');
-            console.log(idSignUp.value + ' Funciona');
         } else {
             idSignUp.classList.add('red-border');
-            console.log(idSignUp.value + ' No funciona');
         }
     }
 
@@ -60,19 +70,22 @@ window.onload = function() {
         idSignUp.classList.remove('red-border', 'green-border');
     }
 
-    // Phone validation 
+    // Phone validation
 
     var phoneSignUp = document.getElementById('phone');
+    var phoneExp = /^[0-9]{9,20}$/;
+
+    function phoneValidated() {
+        if (phoneExp.test(phoneSignUp.value) == true) {
+            return true;
+        }
+    }
 
     phoneSignUp.onblur = function() {
-        var phoneExp = /^[0-9]{9,20}$/;
-        var phoneCharValid = phoneExp.test(phoneSignUp.value);
-        if (phoneCharValid == true) {
+        if (phoneValidated() == true) {
             phoneSignUp.classList.add('green-border');
-            console.log(phoneSignUp.value + ' Funciona');
         } else {
             phoneSignUp.classList.add('red-border');
-            console.log(phoneSignUp.value + ' No funciona');
         }
     }
 
@@ -83,16 +96,19 @@ window.onload = function() {
     // Address validation
 
     var addressSignUp = document.getElementById('address');
+    var addressExp = /^["a-zA-Z"0-9 ]{5,100}$/;
+
+    function addressValidation() {
+        if (addressExp.test(addressSignUp.value) == true) {
+            return true;
+        }
+    }
     
-    addressSignUp.onblur = function() { 
-        var addressExp = /^["a-zA-Z"0-9 ]{5,100}$/;
-        var addressCharValid = addressExp.test(addressSignUp.value);
-        if (addressCharValid == true) {
+    addressSignUp.onblur = function() {
+        if (addressValidation() == true) {
             addressSignUp.classList.add('green-border');
-            console.log(addressSignUp.value + ' Funciona');
         } else {
             addressSignUp.classList.add('red-border');
-            console.log(addressSignUp.value + ' No funciona');
         }
     }
 
@@ -103,16 +119,19 @@ window.onload = function() {
     // Location validation
 
     var locationSignUp = document.getElementById('city');
+    var locationExp = /^["a-zA-Z"0-9 ]{3,100}$/;
+
+    function locationValidated() {
+        if (locationExp.test(locationSignUp.value) == true) {
+            return true;
+        }
+    }
     
     locationSignUp.onblur = function() { 
-        var locationExp = /^["a-zA-Z"0-9 ]{3,100}$/;
-        var locationCharValid = locationExp.test(locationSignUp.value);
-        if (locationCharValid == true) {
+        if (locationValidated() == true) {
             locationSignUp.classList.add('green-border');
-            console.log(locationSignUp.value + ' Funciona');
         } else {
             locationSignUp.classList.add('red-border');
-            console.log(locationSignUp.value + ' No funciona');
         }
     }
 
@@ -123,16 +142,19 @@ window.onload = function() {
     // Zip code validation 
 
     var zipCodeSignUp = document.getElementById('zipCode');
+    var zipCodeExp = /^[0-9]{4,5}$/;
+
+    function zipCodeValidated() {
+        if (zipCodeExp.test(zipCodeSignUp.value) == true) {
+            return  true;
+        }
+    }
     
-    zipCodeSignUp.onblur = function() { 
-        var zipCodeExp = /^[0-9]{4,5}$/;
-        var zipCodeCharValid = zipCodeExp.test(zipCodeSignUp.value);
-        if (zipCodeCharValid == true) {
+    zipCodeSignUp.onblur = function() {
+        if (zipCodeValidated() == true) {
             zipCodeSignUp.classList.add('green-border');
-            console.log(zipCodeSignUp.value + ' Funciona');
         } else {
             zipCodeSignUp.classList.add('red-border');
-            console.log(zipCodeSignUp.value + ' No funciona');
         }
     }
 
@@ -143,42 +165,48 @@ window.onload = function() {
     // Email validation
 
     var emailSignUp = document.getElementById('email');
+    var emailExp = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+
+    function emailValidated() {
+        if (emailExp.test(emailSignUp.value) == true) {
+            return true;
+        }
+    }
     
-    emailSignUp.onblur = function() { 
-        var emailExp = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;        ;
-        var emailCharValid = emailExp.test(emailSignUp.value);
-        if (emailCharValid == true) {
+    emailSignUp.onblur = function() {
+        if (emailValidated() == true) {
             emailSignUp.classList.add('green-border');
-            console.log(emailSignUp.value + ' Funciona');
         } else {
             emailSignUp.classList.add('red-border');
-            console.log(emailSignUp.value + ' No funciona');
         }
     }
 
     emailSignUp.onfocus = function() {
         emailSignUp.classList.remove('red-border', 'green-border');
-    } 
+    }
     
     // Password validation
 
     var passwordSignUp = document.getElementById('password');
+    var paswordExp = /^["a-zA-Z"0-9]{8,20}$/;
+
+    function passwordValidated() {
+        if (paswordExp.test(passwordSignUp.value) == true) {
+            return true;
+        }
+    }
     
-    passwordSignUp.onblur = function() { 
-        var emailExp = /^["a-zA-Z"0-9]{8,20}$/;       ;
-        var emailCharValid = emailExp.test(passwordSignUp.value);
-        if (emailCharValid == true) {
+    passwordSignUp.onblur = function() {
+        if (passwordValidated() == true) {
             passwordSignUp.classList.add('green-border');
-            console.log(passwordSignUp.value + ' Funciona');
         } else {
             passwordSignUp.classList.add('red-border');
-            console.log(passwordSignUp.value + ' No funciona');
         }
     }
 
     passwordSignUp.onfocus = function() {
         passwordSignUp.classList.remove('red-border', 'green-border');
-    } 
+    }
     
     // Password validation 2
 
@@ -187,14 +215,103 @@ window.onload = function() {
     confPasswordSignUp.onblur = function() {
         if (confPasswordSignUp.value === passwordSignUp.value) {
             confPasswordSignUp.classList.add('green-border');
-            console.log(confPasswordSignUp.value + ' paso');
             } else {
             confPasswordSignUp.classList.add('red-border');
-            console.log(confPasswordSignUp.value + ' No paso');
         }
     }
 
     confPasswordSignUp.onfocus = function() {
         confPasswordSignUp.classList.remove('red-border', 'green-border');
-    }   
+    }
+    
+    // Button validation
+    
+    var buttonLogin = document.getElementById('button');
+
+    buttonLogin.addEventListener('click',  function loginBtn(e) {
+        e.preventDefault();
+        var btnTrue = [];
+        var btnFalse = [];
+        var btnError = false;
+
+        if (!nameValidated()) {
+            btnFalse.push('Name invalid: ' + nameSignUp.value + '\n');
+            btnError = true;
+        } else {
+            btnTrue.push('Name: ' + nameSignUp.value + '\n');
+            btnError = false;
+        }
+
+        if (!lastNameValidated()) {
+            btnFalse.push('Last name invalid: ' + lastNameSignUp.value + '\n');
+            btnError = true;
+        } else {
+            btnTrue.push('Last name: ' + lastNameSignUp.value + '\n');
+            btnError = false;
+        }
+
+        if (!idValidated()) {
+            btnFalse.push('ID invalid: ' + idSignUp.value + '\n');
+            btnError = true;
+        } else {
+            btnTrue.push('ID: ' + idSignUp.value + '\n')
+            btnError = false;
+        }
+
+        if (!phoneValidated()) {
+            btnFalse.push('Phone invalid: ' + phoneSignUp.value + '\n');
+            btnError = true;
+        } else {
+            btnTrue.push('Phone: ' + phoneSignUp.value + '\n')
+            btnError = false;
+        }
+
+        if (!addressValidation()) {
+            btnFalse.push('Address invalid: ' + addressSignUp.value + '\n');
+            btnError = true;
+        } else {
+            btnTrue.push('Address: ' + addressSignUp.value + '\n');
+            btnError = false;
+        }
+
+        if (!locationValidated()) {
+            btnFalse.push('Location invalid: ' + locationSignUp.value + '\n');
+            btnError = true;
+        } else {
+            btnTrue.push('Location: ' + locationSignUp.value + '\n');
+            btnError = false;
+        }
+
+        if (!zipCodeValidated()) {
+            btnFalse.push('Zip code invalid: ' + zipCodeSignUp.value + '\n');
+            btnError = true;
+        } else {
+            btnTrue.push('Zip code: ' + zipCodeSignUp.value + '\n');
+            btnError = false;
+        }
+
+        if (!emailValidated()) {
+            btnFalse.push('Email invalid: ' + emailSignUp.value + '\n');
+            btnError = true;
+        } else {
+            btnTrue.push('Email: ' + emailSignUp.value + '\n');
+            btnError = false;
+        }
+
+        if (!passwordValidated()) {
+            btnFalse.push('Password invalid: ' + passwordSignUp.value + '\n');
+            btnError = true;
+        } else {
+            btnTrue.push('pasword: ' + passwordSignUp.value + '\n');
+            btnError = false;
+        }
+
+        if (btnError) {
+            alert(btnFalse);
+            return false;
+        } else if (btnError == false){
+            alert(btnTrue);
+            return true;
+        }
+    });
 }

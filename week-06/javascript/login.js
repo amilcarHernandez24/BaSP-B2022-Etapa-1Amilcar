@@ -36,6 +36,7 @@ window.onload = function() {
         passwordValid.classList.remove('red-border', 'green-border');
     }
 
+    // Button validation
     var buttonLogin = document.getElementById('button');
 
     buttonLogin.addEventListener('click',  function loginBtn(e) {
@@ -51,6 +52,4 @@ window.onload = function() {
             alert('Email & Password incorrect')
         }
     });
-
-   
 }
