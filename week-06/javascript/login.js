@@ -3,16 +3,14 @@ window.onload = function() {
     // Email validation
 
     var emailValid = document.getElementById('email');
+    var emailExpression = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     emailValid.onblur = function() {
-        var emailExpression = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         var emailCharValid =  emailExpression.test(emailValid.value);
         if (emailCharValid == true) {
             emailValid.classList.add('green-border');
-            console.log(emailValid.value + ' true');
         } else {
             emailValid.classList.add('red-border');
-            console.log(emailValid.value + ' Estas en el Horno');
         }
     }
 
@@ -23,16 +21,14 @@ window.onload = function() {
     // Password validation
 
     var passwordValid = document.getElementById('password');
+    var passwordExpression = /^["a-zA-Z"0-9]{8,20}$/; 
 
     passwordValid.onblur = function() {
-        var passwordExpression = /^["a-zA-Z"0-9]{8,20}$/; 
         var passwordCharValid = passwordExpression.test(passwordValid.value);
         if (passwordCharValid == true) {
             passwordValid.classList.add('green-border');
-            console.log(passwordValid.value + ' true');
         } else {
             passwordValid.classList.add('red-border');
-            console.log(passwordValid.value + ' Eso esta malo');
         }
     }
 
@@ -42,11 +38,19 @@ window.onload = function() {
 
     var buttonLogin = document.getElementById('button');
 
-    buttonLogin.addEventListener('click', loginBtn);
+    buttonLogin.addEventListener('click',  function loginBtn(e) {
+        e.preventDefault();
+        
+        if (emailExpression.test(emailValid.value) && passwordExpression.test(passwordValid.value)) {
+            alert('Email: ' + emailValid.value + '\n' + 'Password: ' + passwordValid.value);
+        } else if (emailExpression.test(emailValid.value) && !passwordExpression.test(passwordValid.value)) {
+            alert('Password incorrect');
+        } else if (!emailExpression.test(emailValid.value) && passwordExpression.test(passwordValid.value)) {
+            alert('Email incorrect');
+        } else if (!emailExpression.test(emailValid.value) && !passwordExpression.test(passwordValid.value)) {
+            alert('Email & Password incorrect')
+        }
+    });
 
-    function loginBtn() {
-        if (emailValid.value == false) {
-            
-        } 
-    }
+   
 }
