@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/sign-up.css">
+        <script src="../javascript/sign-up.js"></script>
+        <title>Sign-up</title>
+    </head>
+    <body>
+        <header>
+            <h1>Trackgenix</h1>
+        </header>
+        <main>
+            <section class="img-container">
+                <img src="../assets/Signup.jpg" alt="">
+            </section>
+            <section class="form-container">
+                <form action="">
+                    <h2>Sign-up</h2>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="text" id="lastName" placeholder="Last name" required>
+                    <input type="text" id="dni" placeholder="ID" required>
+                    <input type="date" placeholder="Birth date" required>
+                    <input type="text" id="phone" placeholder="Phone" required>
+                    <input type="text" id="address" placeholder="Address" required>
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="zipCode" placeholder="Zip code" required>
+                    <input type="text" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="confirm-password" placeholder="Confirm password" required>
+                    <label for="terms-conditions">
+                        <input type="checkbox" name="terms-conditions" required> I agree to the terms and conditions
+                    </label>
+                    <button type="submit" id="button">Sign-up</button>
+                    <p>Already have an account? <a class="sign-in" href="#">Sign in</a></p>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

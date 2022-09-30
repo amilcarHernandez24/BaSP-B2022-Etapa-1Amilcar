@@ -1,0 +1,155 @@
+header {
+    height: 73px;
+    color: #fff;
+    background: #373867;
+}
+
+h1 {
+    width: 170px;
+    height: 45px;
+    padding-top: 15px;
+    padding-left: 35px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 15%;
+}
+
+form h2 {
+    margin-bottom: 10%;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+form input {
+    align-self: center;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    width: 80%;
+    margin-bottom: 10%;
+    background-color: #f6f6f6;
+}
+
+form label {
+    width: 80%;
+    margin-bottom: 5%;
+    align-self: center;
+}
+
+form input:last-child {
+    width: initial;
+}
+
+form button {
+    align-self: center;
+    padding: 12px;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    border: none;
+    width: 80%;
+    border: none;
+    background: #373867;
+    color: #fff;
+}
+
+form p {
+    align-self: center;
+    margin-bottom: 10%;
+}
+
+form .sign-in {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.img-container {
+    display: none;
+}
+
+@media(min-width: 480px) {
+    header {
+        height: 115px;
+    }
+
+    main {
+        display: flex;
+    }
+
+    h1 {
+        width: 270px;
+        height: 72px;
+        padding-top: 20px;
+        padding-left: 60px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .img-container img {
+        height: 40%;
+        width: 80%;
+    }
+
+    .form-container {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .form-container form {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 7% 10%;
+        padding: 3%;
+        background: #f6f6f6;
+    }
+
+    form input {
+        align-self: center;
+        padding: 12px;
+        border-radius: 15px;
+        border: none;
+        width: 80%;
+        margin-bottom: 10%;
+        background-color: #fff
+    }
+}
+
+@media(min-width: 1024px) {
+    .form-container form {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 7% 10%;
+        padding: 3%;
+        background: #fff;
+    }
+
+    form input {
+        border: 0.5px solid #000;
+    }
+}
+
+.red-border {
+    border: 2px solid red;
+}
+
+.green-border {
+    border: 2px solid green;
+}
