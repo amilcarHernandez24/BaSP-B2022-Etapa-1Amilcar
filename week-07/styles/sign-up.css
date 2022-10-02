@@ -1,7 +1,21 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     height: 73px;
     color: #fff;
     background: #373867;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #fff;
+    text-decoration: none;
 }
 
 h1 {

@@ -37,13 +37,14 @@ window.onload = function() {
     }
 
     // Button validation
-    var buttonLogin = document.getElementById('button');
 
-    buttonLogin.addEventListener('click',  function loginBtn(e) {
+    /*buttonLogin.addEventListener('click',  function loginBtn(e) {
         e.preventDefault();
-        
+        var btnTrue = [];
+
         if (emailExpression.test(emailValid.value) && passwordExpression.test(passwordValid.value)) {
-            alert('Email: ' + emailValid.value + '\n' + 'Password: ' + passwordValid.value);
+            btnTrue.push('Email: ' + emailValid.value + '\n' + 'Password: ' + passwordValid.value);
+            alert(btnTrue);
         } else if (emailExpression.test(emailValid.value) && !passwordExpression.test(passwordValid.value)) {
             alert('Password incorrect');
         } else if (!emailExpression.test(emailValid.value) && passwordExpression.test(passwordValid.value)) {
@@ -51,5 +52,42 @@ window.onload = function() {
         } else if (!emailExpression.test(emailValid.value) && !passwordExpression.test(passwordValid.value)) {
             alert('Email & Password incorrect')
         }
-    });
+    });*/
+
+    var buttonLogin = document.getElementById('button');
+
+    buttonLogin.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        var emailRequest = emailValid.value
+        var passwordRequest =  passwordValid.value    
+        
+        var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + emailRequest + '&password=' + passwordRequest
+
+        fetch(url)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                if(data.success == true) {
+                    alert('The request was succesfull: ' + data.msg);
+                    localStorage.setItem('email', emailValid.value)
+                    localStorage.setItem('pasword', passwordValid.value)
+                } else {
+                    if (data.errors == undefined) {
+                        alert('The request was not succesfull: ' + data.msg);
+                    } else {
+                        var errorMsg = [];
+                        for (let i = 0; i < data.errors.length; i++) {
+                            errorMsg.push(data.errors[i].msg)
+                        }
+                        var errorMsgText = errorMsg.join('\n');
+                        alert('The request was not succesfull: ' + errorMsgText);
+                    } 
+                }
+            })
+            .catch(function(error) {
+                alert('The request failed: ' + error);
+            })
+    })
 }

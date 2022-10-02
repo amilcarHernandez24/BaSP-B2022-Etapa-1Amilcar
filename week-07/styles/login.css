@@ -8,6 +8,16 @@ header {
     background: #373867;
 }
 
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
 h1 {
     width: 170px;
     height: 45px;

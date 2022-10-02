@@ -24,7 +24,7 @@ window.onload = function() {
     }
 
     // Last name validation
-    
+
     var lastNameSignUp = document.getElementById('lastName');
     var lastNameExp = /^[a-zA-Z]{3,30}$/;
 
@@ -41,7 +41,6 @@ window.onload = function() {
             lastNameSignUp.classList.add('red-border');
         }
     }
-    
 
     lastNameSignUp.onfocus = function() {
         lastNameSignUp.classList.remove('red-border', 'green-border');
@@ -69,6 +68,14 @@ window.onload = function() {
     idSignUp.onfocus = function() {
         idSignUp.classList.remove('red-border', 'green-border');
     }
+
+    //DOB declaration
+
+    var dobSignUp = document.getElementById('dob');
+    dobSignUp.onblur = function() {
+        console.log(dobSignUp.value);
+    }
+
 
     // Phone validation
 
@@ -226,9 +233,9 @@ window.onload = function() {
     
     // Button validation
     
-    var buttonLogin = document.getElementById('button');
+    //var buttonLogin = document.getElementById('button');
 
-    buttonLogin.addEventListener('click',  function loginBtn(e) {
+    /*buttonLogin.addEventListener('click',  function loginBtn(e) {
         e.preventDefault();
         var btnTrue = [];
         var btnFalse = [];
@@ -313,5 +320,56 @@ window.onload = function() {
             alert(btnTrue);
             return true;
         }
-    });
+    });*/
+
+    var buttonLogin = document.getElementById('button');
+
+    buttonLogin.addEventListener('click',  function loginBtn(e) {
+        e.preventDefault();
+
+        var nameRequest = nameSignUp.value
+        var lastNameRequest = lastNameSignUp.value
+        var idRequest = idSignUp.value
+        var phoneRequest = phoneSignUp.value
+        var addressRequest = addressSignUp.value
+        var locationRequest = locationSignUp.value
+        var zipCodeRequest = zipCodeSignUp.value
+        var emailRequest = emailSignUp.value
+        var passwordRequest = passwordSignUp.value 
+        var dobChanged = dobSignUp.value.split('-') //JS format aa/mm/dd
+        var dobRequest = dobChanged[1] + '/' + dobChanged[2] + '/' + dobChanged[0];
+        
+        var url = `https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${nameRequest}&lastName=${lastNameRequest}&dni=${idRequest}&dob=${dobRequest}&phone=${phoneRequest}&address=${addressRequest}&city=${locationRequest}&zip=${zipCodeRequest}&email=${emailRequest}&password=${passwordRequest}`
+
+        fetch(url)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                if(data.success == true) {
+                    alert('The request was succesfull: ' + data.msg);
+                    localStorage.setItem('Name', nameSignUp.value)
+                    localStorage.setItem('LastName', lastNameSignUp.value)
+                    localStorage.setItem('DNI', idSignUp.value)
+                    localStorage.setItem('Phone', phoneSignUp.value)
+                    localStorage.setItem('address', addressSignUp.value)
+                    localStorage.setItem('city', locationSignUp.value)
+                    localStorage.setItem('zipCode', zipCodeSignUp.value)
+                    localStorage.setItem('emailSignUp', emailSignUp.value)
+                    localStorage.setItem('passwordSignUp', passwordSignUp.value)
+                    localStorage.setItem('dateOfBirth', dobSignUp.value)
+                } else {
+                    var errorMsg = [];
+                    for (let i = 0; i < data.errors.length; i++) {
+                        errorMsg.push(data.errors[i].msg)
+                    }
+                    var errorMsgText = errorMsg.join('\n');
+                    alert('The request was not succesfull: ' + '\n' + errorMsgText);
+                }
+            })
+            .catch(function(error) {
+                alert('The request failed: ' + error);
+            })
+
+    })
 }
