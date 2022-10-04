@@ -63,4 +63,12 @@ In week-06 we are going to work giving interaction to the page using JavaScript,
 ```
 https://amilcarhernandez24.github.io/BaSP-B2022-Etapa-1Amilcar/week-06/views
 ```
+** week-07 **
+
+
+In week-07 we worked on the week-06 forms so that when pressing the confirmation buttons the data loaded in them is sent to a web server through an HTTP request from JavaScript. We worked with the .fetch method making requests to the server and we also learned the basic concepts of a "query-params", "localStorage" and what was an "API".
+
+```
+https://amilcarhernandez24.github.io/BaSP-B2022-Etapa-1Amilcar/week-07/views
+```
 _By Amilcar Hernandez_
