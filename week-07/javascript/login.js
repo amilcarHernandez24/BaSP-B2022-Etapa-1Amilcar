@@ -71,8 +71,8 @@ window.onload = function() {
             .then(function(data) {
                 if(data.success == true) {
                     alert('The request was succesfull: ' + data.msg);
-                    localStorage.setItem('email', emailValid.value)
-                    localStorage.setItem('pasword', passwordValid.value)
+                    // localStorage.setItem('email', emailValid.value)
+                    // localStorage.setItem('pasword', passwordValid.value)
                 } else {
                     if (data.errors == undefined) {
                         alert('The request was not succesfull: ' + data.msg);
