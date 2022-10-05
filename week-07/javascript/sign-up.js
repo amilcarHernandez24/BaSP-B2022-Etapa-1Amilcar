@@ -230,12 +230,11 @@ window.onload = function() {
     confPasswordSignUp.onfocus = function() {
         confPasswordSignUp.classList.remove('red-border', 'green-border');
     }
-    
+
     // Button validation
-    
+
     var buttonLogin = document.getElementById('button');
 
-    
     buttonLogin.addEventListener('click',  function loginBtn(e) {
         e.preventDefault();
         var btnTrue = [];
@@ -244,53 +243,53 @@ window.onload = function() {
         if (!nameValidated()) {
             btnFalse.push('Name invalid: ' + nameSignUp.value + '\n'); 
         } else {
-            btnTrue.push('Name: ' + nameSignUp.value + '\n');           
+            btnTrue.push('Name: ' + nameSignUp.value + '\n');
         }
 
         if (!lastNameValidated()) {
             btnFalse.push('Last name invalid: ' + lastNameSignUp.value + '\n');
         } else {
-            btnTrue.push('Last name: ' + lastNameSignUp.value + '\n');         
+            btnTrue.push('Last name: ' + lastNameSignUp.value + '\n');
         }
 
         if (!idValidated()) {
-            btnFalse.push('ID invalid: ' + idSignUp.value + '\n');   
+            btnFalse.push('ID invalid: ' + idSignUp.value + '\n');
         } else {
-            btnTrue.push('ID: ' + idSignUp.value + '\n')  
+            btnTrue.push('ID: ' + idSignUp.value + '\n')
         }
 
         if (!phoneValidated()) {
-            btnFalse.push('Phone invalid: ' + phoneSignUp.value + '\n');  
+            btnFalse.push('Phone invalid: ' + phoneSignUp.value + '\n');
         } else {
-            btnTrue.push('Phone: ' + phoneSignUp.value + '\n')  
+            btnTrue.push('Phone: ' + phoneSignUp.value + '\n')
         }
 
         if (!addressValidation()) {
-            btnFalse.push('Address invalid: ' + addressSignUp.value + '\n');  
+            btnFalse.push('Address invalid: ' + addressSignUp.value + '\n');
         } else {
-            btnTrue.push('Address: ' + addressSignUp.value + '\n');    
+            btnTrue.push('Address: ' + addressSignUp.value + '\n');
         }
 
         if (!locationValidated()) {
-            btnFalse.push('Location invalid: ' + locationSignUp.value + '\n');      
+            btnFalse.push('Location invalid: ' + locationSignUp.value + '\n');
         } else {
-            btnTrue.push('Location: ' + locationSignUp.value + '\n');     
+            btnTrue.push('Location: ' + locationSignUp.value + '\n');
         }
 
         if (!zipCodeValidated()) {
             btnFalse.push('Zip code invalid: ' + zipCodeSignUp.value + '\n');
         } else {
-            btnTrue.push('Zip code: ' + zipCodeSignUp.value + '\n'); 
+            btnTrue.push('Zip code: ' + zipCodeSignUp.value + '\n');
         }
 
         if (!emailValidated()) {
-            btnFalse.push('Email invalid: ' + emailSignUp.value + '\n');   
+            btnFalse.push('Email invalid: ' + emailSignUp.value + '\n');
         } else {
             btnTrue.push('Email: ' + emailSignUp.value + '\n');
         }
 
         if (!passwordValidated()) {
-            btnFalse.push('Password invalid: ' + passwordSignUp.value + '\n');  
+            btnFalse.push('Password invalid: ' + passwordSignUp.value + '\n');
         } else {
             btnTrue.push('pasword: ' + passwordSignUp.value + '\n'); 
         }

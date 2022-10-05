@@ -37,8 +37,9 @@ window.onload = function() {
     }
 
     // Button validation
-
-    /*buttonLogin.addEventListener('click',  function loginBtn(e) {
+    var buttonLogin = document.getElementById('button');
+    
+    buttonLogin.addEventListener('click',  function loginBtn(e) {
         e.preventDefault();
         var btnTrue = [];
 
@@ -52,27 +53,20 @@ window.onload = function() {
         } else if (!emailExpression.test(emailValid.value) && !passwordExpression.test(passwordValid.value)) {
             alert('Email & Password incorrect')
         }
-    });*/
 
-    var buttonLogin = document.getElementById('button');
-
-    buttonLogin.addEventListener('click', function(e) {
-        e.preventDefault();
-        
         var emailRequest = emailValid.value
-        var passwordRequest =  passwordValid.value    
+        var passwordRequest =  passwordValid.value
         
         var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + emailRequest + '&password=' + passwordRequest
 
-        fetch(url)
+        if (btnTrue.length != 0) {
+            fetch(url)
             .then(function(response) {
                 return response.json();
             })
             .then(function(data) {
                 if(data.success == true) {
                     alert('The request was succesfull: ' + data.msg);
-                    // localStorage.setItem('email', emailValid.value)
-                    // localStorage.setItem('pasword', passwordValid.value)
                 } else {
                     if (data.errors == undefined) {
                         alert('The request was not succesfull: ' + data.msg);
@@ -83,11 +77,12 @@ window.onload = function() {
                         }
                         var errorMsgText = errorMsg.join('\n');
                         alert('The request was not succesfull: ' + errorMsgText);
-                    } 
+                    }
                 }
             })
             .catch(function(error) {
                 alert('The request failed: ' + error);
             })
-    })
+        }  
+    });
 }
